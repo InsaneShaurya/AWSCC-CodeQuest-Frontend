@@ -1,106 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
-    <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faculty teaching notes for AKTU BCA Fundamentals of Computer.">
+  <title>AKTU BCA | Fundamentals of Computer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap');
+    :root{--navy:#092a3d;--navy-2:#10384e;--paper:#f7f6f0;--ink:#112b39;--muted:#62727a;--line:#d8dedb;--teal:#0c8b8d;--mint:#d6f0e8;--coral:#ea715c;--yellow:#f8cf62;--white:#fff;--shadow:0 18px 45px #092a3d16}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 Manrope,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}.topbar{height:7px;background:linear-gradient(90deg,var(--coral) 0 23%,var(--yellow) 23% 45%,var(--teal) 45% 74%,#4d7387 74%)}.hero{background:var(--navy);color:white;padding:30px max(24px,calc((100vw - 1200px)/2)) 50px;position:relative;overflow:hidden}.hero:after{content:"01";position:absolute;right:4%;bottom:-70px;font:700 240px/1 'Source Serif 4';color:#ffffff09}.brand{display:flex;justify-content:space-between;align-items:center;gap:20px;position:relative;z-index:1}.brandmark{font-weight:800;letter-spacing:.04em}.brandmark span{color:#8ce0d0}.actions{display:flex;gap:10px}.icon-btn,.outline-btn{border:1px solid #ffffff3d;background:transparent;color:#fff;border-radius:7px;padding:8px 12px}.icon-btn:hover,.outline-btn:hover{background:#ffffff18}.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:end;max-width:1100px;margin:65px auto 0;position:relative;z-index:1}.eyebrow{color:#8ce0d0;font:500 12px/1 'DM Mono';letter-spacing:.12em;text-transform:uppercase}.hero h1{font:700 clamp(38px,6vw,72px)/1.02 'Source Serif 4',serif;margin:13px 0 18px;letter-spacing:-.04em}.hero p{max-width:650px;color:#d8e6e8;margin:0}.faculty-card{border-left:1px solid #ffffff42;padding:8px 0 8px 24px}.faculty-card strong{display:block;font-size:17px}.faculty-card p{font-size:13px;margin-top:5px}.page{max-width:1200px;margin:-24px auto 0;padding:0 24px 70px;position:relative}.overview{background:var(--white);box-shadow:var(--shadow);border-radius:9px;display:grid;grid-template-columns:1.5fr repeat(3,1fr);padding:19px 25px;gap:18px;align-items:center}.overview>div:not(:first-child){border-left:1px solid var(--line);padding-left:20px}.overview b{display:block;font:700 24px/1 'Source Serif 4';color:var(--teal)}.overview small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:44px;margin-top:42px}.sidebar{position:sticky;top:20px;align-self:start}.sidebar h2{font:600 12px 'DM Mono';color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}.unit-nav{border-left:1px solid var(--line);padding-left:14px}.unit-nav button{display:block;width:100%;text-align:left;border:0;background:none;padding:9px 11px;color:var(--muted);border-radius:0 5px 5px 0;font-weight:600}.unit-nav button.active{color:var(--navy);background:#d8eeea;border-left:3px solid var(--teal);margin-left:-17px;padding-left:14px}.toolbox{margin-top:34px;padding:17px;background:#f0eee5;border-radius:7px}.toolbox p{font-size:12px;color:var(--muted);margin:0 0 10px}.search{width:100%;border:1px solid #cbd3d0;border-radius:5px;padding:9px;background:white;color:var(--ink)}.tiny{font-size:11px;color:var(--muted);margin-top:10px}.content{min-width:0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:23px}.section-head h2{font:700 37px/1 'Source Serif 4';letter-spacing:-.03em;margin:0}.section-head p{margin:0;color:var(--muted);font-size:13px}.unit{display:none}.unit.visible{display:block}.lead{font-size:17px;line-height:1.75;max-width:830px;margin:0 0 23px}.cycle{display:grid;grid-template-columns:repeat(3,1fr);margin:24px 0 34px}.cycle div{padding:18px;background:#e6f3ef;border-right:2px solid var(--paper);position:relative}.cycle div:nth-child(2){background:#d9e7e8}.cycle div:nth-child(3){background:#f9e7b7}.cycle b{display:block;font:500 12px 'DM Mono';letter-spacing:.11em;color:var(--teal)}.cycle span{display:block;font-size:13px;margin-top:4px}.block{margin:36px 0}.block h3{font:700 27px/1.2 'Source Serif 4';margin:0 0 13px}.block h3 span{font:500 12px 'DM Mono';letter-spacing:.08em;color:var(--coral);vertical-align:middle;margin-right:10px}.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.note-card{background:white;border:1px solid var(--line);border-radius:7px;padding:18px;transition:.2s}.note-card:hover{border-color:#8bbeb9;transform:translateY(-2px);box-shadow:0 9px 20px #092a3d0d}.note-card h4{margin:0 0 6px;font-size:14px}.note-card p{margin:0;color:var(--muted);font-size:13px}.tag{font:500 10px 'DM Mono';text-transform:uppercase;letter-spacing:.1em;color:var(--teal)}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:7px;background:white}table{border-collapse:collapse;width:100%;font-size:13px}th{background:#e4f0ed;color:#234450;text-align:left;font-size:11px;letter-spacing:.07em;text-transform:uppercase}th,td{padding:12px 14px;border-bottom:1px solid #e6eae8;vertical-align:top}tr:last-child td{border:0}td:first-child{font-weight:700}.callout{border-left:4px solid var(--coral);background:#fff5ee;padding:15px 18px;border-radius:0 6px 6px 0;color:#613a32;font-size:13px}.callout b{display:block;margin-bottom:3px}.accordion{border-top:1px solid var(--line)}.accordion details{border-bottom:1px solid var(--line);background:#fff}.accordion summary{list-style:none;padding:15px 18px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between}.accordion summary::after{content:'+';color:var(--teal);font-size:20px}.accordion details[open] summary::after{content:'–'}.accordion .detail{padding:0 18px 17px;color:var(--muted);font-size:13px}.checklist{padding:16px 18px;background:var(--navy-2);color:white;border-radius:7px;margin-top:26px}.checklist h4{margin:0 0 10px;font:600 15px 'Source Serif 4'}.checklist label{display:block;padding:6px 0;font-size:13px;color:#d5e4e4}.checklist input{accent-color:#66d2bd;margin-right:8px}.footer{border-top:1px solid var(--line);margin-top:55px;padding:25px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.hidden{display:none!important}.empty{padding:25px;background:#fff5ee;color:#75473e;border-radius:6px}
+    body.high-contrast{--paper:#fff;--ink:#000;--muted:#273238;--line:#788488;--navy:#001b2b;--navy-2:#002a3c;--teal:#006f70}body.high-contrast .note-card{border-color:#526268}@media(max-width:760px){.hero{padding-bottom:40px}.hero-grid{grid-template-columns:1fr;gap:25px;margin-top:43px}.faculty-card{border-left:0;border-top:1px solid #ffffff42;padding:18px 0 0}.overview{grid-template-columns:1fr 1fr;padding:18px}.overview>div:first-child{grid-column:1/-1}.overview>div:not(:first-child){border-left:0;border-top:1px solid var(--line);padding:12px 0 0}.layout{grid-template-columns:1fr;gap:28px}.sidebar{position:static}.unit-nav{display:flex;overflow:auto;border-left:0;border-bottom:1px solid var(--line);padding:0}.unit-nav button{white-space:nowrap}.unit-nav button.active{margin:0;border-left:0;border-bottom:3px solid var(--teal);padding-left:11px;border-radius:5px 5px 0 0}.toolbox{margin-top:16px}.section-head h2{font-size:32px}.card-grid{grid-template-columns:1fr}.cycle{grid-template-columns:1fr}.cycle div{border-right:0;border-bottom:2px solid var(--paper)}.footer{display:block}.footer p{margin:5px 0}}@media print{.topbar,.actions,.sidebar,.overview{display:none}.hero{padding:20px;background:white;color:#112b39}.hero p{color:#334}.hero:after{display:none}.page{margin:0}.layout{display:block}.unit{display:block!important}.unit:not(:first-child){page-break-before:always}.footer{display:none}}
+  </style>
 </head>
 <body>
-    <div> <!--Container for all-->
-        <header> <!--social media accounts-->
-            <a href = "https://www.facebook.com/kristineannetabiolo/"><img src = "images/facebook.png"></a>
-            <a href = "https://github.com/KristineTabs"><img src = "images/github.png"></a>
-        </header>
-
-        <main>
-            <article>
-                <div id = "welcome"> <!--welcome section-->
-                    <a class = "name">Kristine Anne C. Tabiolo</a>
-                    <p class = "third-line">An aspiring frontend web developer</p>
-                    <a class = "description">Welcome! I'm a Junior Frontend Developer in AWS Cloud Club-PUP Manila. I'm currently studying at the Polytechnic University of the Philippines. I'm an aspiring frontend web developer who aims to create wonderful designs that will captivate users.</a>
-                    <p class = "description">In this portfolio, my educational background and projects are displayed.</p>
-                    <nav>
-                        <a href="#education"><li>Educational Background</li></a>
-                        <a href="#projects"><li>Projects</li></a>
-                    </nav>
-                </div>
-
-                <div id = "education">
-                    <br>
-                    <br>
-                    <div><p class = "education-title">EDUCATIONAL BACKGROUND</p></div>
-                    <div class = "all-schools">
-                        <div class = "school">
-                            <a class = "school-title">Falcon School</a>
-                            <a class = "school-year">2016 - 2020</a>
-                            <a class = "school-time">Junior High School</a>
-                            <br>
-                            <a class = "school-award">Awards:</a>
-                            <ul class = "awards">
-                                <li>With High Honors (Grades 7-10)</li>
-                                <li>Department Excellence Awardee (Grades 8-10)</li>
-                                <li>MTAP Participant (Grades 8-10)</li>
-                                <li>2nd Place in ISAAL Quiz Bee (Grade 9)</li>
-                                <li>ISAAL-Math Bronze Medalist (Grade 10)</li>
-                                <li>Best in Math (Grade 10)</li>
-                            </ul>
-                        </div>
-
-                        <div class = "school">
-                            <a class = "school-title">Lagro High School</a>
-                            <a class = "school-year">2020-2022</a>
-                            <a class = "school-time">Senior High School</a>
-                            <br>
-                            <a class = "school-award">Awards:</a>
-                            <ul class = "awards">
-                                <li>With High Honors (Grades 11 & 12)</li>
-                            </ul>
-                        </div>
-
-                        <div class = "school">
-                            <a class = "school-title">Polytechnic University of the Philippines</a>
-                            <a class = "school-year">2022 - ongoing</a>
-                            <a class = "school-time">Bachelor of Science in Computer Science</a>
-                            <a class = "school-time">DOST Scholar</a>
-                            <a class = "school-time">Junior Frontend Developer at AWS Cloud Club</a>
-                            <br>
-                            <a class = "school-award">Awards:</a>
-                            <ul class = "awards">
-                                <li>President's Lister (1st Year)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div id = "projects">
-                    <br>
-                    <br>
-                    <p class = "education-title">PROJECTS</p>
-                    <div class = "project">
-                        <a class = "project-title">BLOG POST</a>
-                        <br>
-                        <a class = "project-desc">A Part of CodeQuest: Frontend</a>
-                        <a class = "project-summary">This is the first project I created for CodeQuest: Frontend.</a>
-                    </div>
-
-                    <div class = "project">
-                        <a class = "project-title">ROCK-PAPER-SCISSORS</a>
-                        <br>
-                        <a class = "project-desc">A Part of CodeQuest: Frontend</a>
-                        <a class = "project-summary">This is the third project I created for CodeQuest: Frontend</a>
-                    </div>
-
-                    <div class = "project">
-                        <a class = "project-title">NUMBER GAME</a>
-                        <br>
-                        <a class = "project-desc">A Part of CodeQuest: Frontend</a>
-                        <a class = "project-summary">This is the last project I created for CodeQuest: Frontend</a>
-                    </div>
-                </div>
-            </article>
-        </main>
+  <div class="topbar"></div>
+  <header class="hero">
+    <div class="brand"><div class="brandmark">AKTU <span>/</span> BCA</div><div class="actions"><button class="outline-btn" id="printBtn">Print notes</button><button class="icon-btn" id="themeBtn" aria-label="Toggle contrast">◐</button></div></div>
+    <div class="hero-grid"><div><div class="eyebrow">Faculty teaching notes · BCA syllabus</div><h1>Fundamentals<br>of Computer</h1><p>A clear, classroom-ready companion for Unit I and Unit II. Built for explaining concepts, revising quickly, and tracking what has been covered.</p></div><aside class="faculty-card"><div class="eyebrow">Prepared by</div><strong>MCA Department</strong><p>Assistant Professor<br>Amardeep Mishra</p></aside></div>
+  </header>
+  <main class="page">
+    <section class="overview" aria-label="Course overview"><div><small>Course focus</small><b>Understand the foundations.</b></div><div><small>Units</small><b>02</b></div><div><small>Core topics</small><b>08</b></div><div><small>Format</small><b>Teaching notes</b></div></section>
+    <div class="layout"><aside class="sidebar"><h2>Course map</h2><nav class="unit-nav"><button class="active" data-unit="unit1">01 · Computer basics</button><button data-unit="unit2">02 · Memory</button><button data-unit="unit3">03 · Computer languages</button></nav><div class="toolbox"><p>Find a term in these notes</p><input id="search" class="search" type="search" placeholder="e.g. cache, RAM, compiler"><div class="tiny" id="resultText">Search highlights matching topics.</div></div></aside>
+      <div class="content">
+        <section class="unit visible" id="unit1"><div class="section-head"><div><div class="eyebrow">Unit I</div><h2>Computer, hardware &amp; software</h2></div><p>Introduction · classification · I/O · software</p></div>
+          <p class="lead">A computer is an electronic device that accepts raw data as input, processes it according to stored instructions, and produces meaningful information as output. Modern computers do far more than calculate: they communicate, create, analyse, and automate.</p>
+          <div class="cycle"><div><b>01 / INPUT</b><span>Raw data and instructions enter the system.</span></div><div><b>02 / PROCESS</b><span>The CPU performs calculations and logical operations.</span></div><div><b>03 / OUTPUT</b><span>Useful information is presented to the user.</span></div></div>
+          <div class="block searchable"><h3><span>1.1.1</span>Characteristics of a computer</h3><div class="card-grid"><article class="note-card"><div class="tag">Performance</div><h4>Speed &amp; accuracy</h4><p>Executes millions or billions of instructions per second. Correct input and instructions produce correct results—this is the GIGO principle.</p></article><article class="note-card"><div class="tag">Consistency</div><h4>Diligence &amp; reliability</h4><p>Performs repetitive work without fatigue and gives consistent results for the same input.</p></article><article class="note-card"><div class="tag">Capability</div><h4>Storage &amp; versatility</h4><p>Stores large volumes of data and can be used for accounting, design, research, gaming, and more.</p></article><article class="note-card"><div class="tag">Operation</div><h4>Automation</h4><p>Once a program is started, the computer follows its instructions until it completes or an error occurs.</p></article></div></div>
+          <div class="block searchable"><h3><span>1.1.2</span>Limitations</h3><div class="callout"><b>Computers follow instructions; they do not possess human judgement.</b>They have no inherent intelligence, feelings, or intuition. They depend on correct programs and data, require power and maintenance, and cannot learn without suitable algorithms or models.</div></div>
+          <div class="block searchable"><h3><span>1.1.3</span>Generations of computers</h3><div class="table-wrap"><table><thead><tr><th>Generation</th><th>Period</th><th>Core technology</th><th>Examples</th></tr></thead><tbody><tr><td>First</td><td>1940–1956</td><td>Vacuum tubes</td><td>ENIAC, UNIVAC-I, EDVAC</td></tr><tr><td>Second</td><td>1956–1963</td><td>Transistors</td><td>IBM 1401, IBM 7094</td></tr><tr><td>Third</td><td>1964–1971</td><td>Integrated circuits</td><td>IBM System/360, PDP-8</td></tr><tr><td>Fourth</td><td>1971–2010</td><td>Microprocessor / VLSI</td><td>IBM PC, Apple Macintosh</td></tr><tr><td>Fifth</td><td>2010–present</td><td>AI, ULSI, parallel processing</td><td>IBM Watson, modern AI systems</td></tr></tbody></table></div></div>
+          <div class="block searchable"><h3><span>1.2</span>Hardware: input &amp; output</h3><div class="accordion"><details><summary>Input devices</summary><div class="detail"><b>Keyboard:</b> enters text, numbers and commands. &nbsp; <b>Mouse:</b> selects on-screen objects. &nbsp; <b>Scanner:</b> digitises printed documents. &nbsp; <b>MICR:</b> reads magnetic-ink characters on cheques. &nbsp; <b>OMR:</b> detects marked positions on answer sheets. &nbsp; <b>Bar-code reader:</b> identifies products from printed codes. &nbsp; <b>Joystick / light pen:</b> control or select on screen.</div></details><details><summary>Output devices</summary><div class="detail"><b>VDU / monitor:</b> displays soft-copy text, images and video. &nbsp; <b>Printer:</b> produces hard copy; common types include dot-matrix, inkjet and laser. &nbsp; <b>Plotter:</b> makes large, precise engineering drawings. &nbsp; <b>Speaker:</b> converts signals to sound.</div></details></div></div>
+          <div class="block searchable"><h3><span>1.3</span>Software types</h3><div class="table-wrap"><table><thead><tr><th>Type</th><th>Sub-category</th><th>Function</th><th>Examples</th></tr></thead><tbody><tr><td>System software</td><td>Operating system</td><td>Manages hardware and provides the platform for applications.</td><td>Windows, Linux, macOS</td></tr><tr><td>System software</td><td>Language processors</td><td>Translate programs into machine code.</td><td>Compiler, interpreter, assembler</td></tr><tr><td>System software</td><td>Utilities</td><td>Maintain performance and security.</td><td>Antivirus, backup tools</td></tr><tr><td>Application software</td><td>General / specific purpose</td><td>Helps users complete everyday or specialist tasks.</td><td>MS Word, browser, payroll system</td></tr></tbody></table></div></div>
+          <div class="checklist"><h4>Teaching checklist · Unit I</h4><label><input type="checkbox" data-check="input-process-output">Explain the input–process–output cycle</label><label><input type="checkbox" data-check="generations">Compare generations and their technologies</label><label><input type="checkbox" data-check="devices">Differentiate input and output devices</label></div>
+        </section>
+        <section class="unit" id="unit2"><div class="section-head"><div><div class="eyebrow">Unit II</div><h2>Memory &amp; storage</h2></div><p>Primary · secondary · cache · registers</p></div><p class="lead">Memory stores data and instructions either temporarily or permanently. Primary memory is directly accessible to the CPU during program execution; secondary memory keeps information for long-term use.</p><div class="block searchable"><h3><span>2.1</span>Primary memory</h3><div class="card-grid"><article class="note-card"><div class="tag">Volatile</div><h4>RAM — Random Access Memory</h4><p>Fast working memory for the OS, active programs, and data currently in use. Its contents are lost when power is removed. RAM supports direct access and read/write operations.</p></article><article class="note-card"><div class="tag">Non-volatile</div><h4>ROM — Read-Only Memory</h4><p>Stores persistent firmware and boot-up instructions. ROM retains information when power is off; modern forms may be electrically rewritten.</p></article></div></div><div class="block searchable"><h3><span>2.2</span>RAM and ROM at a glance</h3><div class="table-wrap"><table><thead><tr><th>RAM</th><th>ROM</th></tr></thead><tbody><tr><td>Temporary and volatile</td><td>Permanent and non-volatile</td></tr><tr><td>High-speed read/write memory</td><td>Primarily read-only firmware storage</td></tr><tr><td>Used by active instructions and applications</td><td>Used in bootstrapping, BIOS, and microcontrollers</td></tr><tr><td>Includes SRAM and DRAM (SDRAM, DDR)</td><td>Includes MROM, PROM, EPROM, EEPROM, Flash ROM</td></tr></tbody></table></div></div><div class="block searchable"><h3><span>2.3</span>Memory close to the CPU</h3><div class="accordion"><details><summary>Cache memory</summary><div class="detail">A small, very fast volatile memory placed between the CPU and RAM. It keeps frequently used data and instructions close to the processor, reducing access latency and improving performance.</div></details><details><summary>Register memory</summary><div class="detail">The smallest and fastest storage inside the CPU. Key registers include the <b>Program Counter (PC)</b>, <b>Instruction Register (IR)</b>, <b>Memory Address Register (MAR)</b>, and <b>Memory Data Register (MDR)</b>.</div></details><details><summary>Virtual memory</summary><div class="detail">A technique that uses part of secondary storage to extend apparent main memory. It lets large programs run, but disk access is slower than RAM and may reduce performance.</div></details></div></div><div class="block searchable"><h3><span>2.4</span>Secondary memory</h3><div class="card-grid"><article class="note-card"><h4>Magnetic storage</h4><p>Hard disk drives and magnetic tape. Tape is low-cost and high-capacity but supports sequential access only.</p></article><article class="note-card"><h4>Optical storage</h4><p>CD-ROM, CD-R, CD-RW, DVD and Blu-ray use lasers for reading and writing data.</p></article><article class="note-card"><h4>Flash storage</h4><p>SSDs, USB drives and memory cards use non-volatile NAND/NOR flash and have no moving mechanical parts.</p></article><article class="note-card"><h4>Cloud &amp; hybrid storage</h4><p>Services such as Drive, OneDrive and S3 provide remote storage; hybrid drives combine HDD capacity with SSD speed.</p></article></div></div><div class="checklist"><h4>Teaching checklist · Unit II</h4><label><input type="checkbox" data-check="ram-rom">Contrast RAM with ROM</label><label><input type="checkbox" data-check="hierarchy">Explain cache, registers, and virtual memory</label><label><input type="checkbox" data-check="storage">Classify secondary storage devices</label></div></section>
+        <section class="unit" id="unit3"><div class="section-head"><div><div class="eyebrow">Unit II · Continued</div><h2>Computer languages</h2></div><p>Machine · assembly · high level</p></div><p class="lead">Programming languages are the methods used to instruct a computer to perform tasks. They have progressed from hardware-specific binary instructions to human-friendly, machine-independent languages.</p><div class="block searchable"><h3><span>3.1</span>Language levels</h3><div class="card-grid"><article class="note-card"><div class="tag">Lowest level</div><h4>Machine language</h4><p>Binary 1s and 0s understood directly by a particular computer. It is fast but machine-dependent, difficult to write, debug, and modify. An instruction has an opcode and operand.</p></article><article class="note-card"><div class="tag">Symbolic level</div><h4>Assembly language</h4><p>Uses mnemonic codes such as ADD instead of binary codes and symbolic addresses. An assembler translates it to machine language. It remains hardware-dependent.</p></article><article class="note-card"><div class="tag">Human-friendly</div><h4>High-level language</h4><p>Uses English-like words and familiar symbols. It is easier to learn, document, maintain, and transport, although it offers less direct hardware control.</p></article><article class="note-card"><div class="tag">Translation</div><h4>Compiler &amp; interpreter</h4><p>A compiler translates an entire source program into object code. An interpreter translates and immediately executes one statement at a time.</p></article></div></div><div class="block searchable"><h3><span>3.2</span>Quick comparison</h3><div class="table-wrap"><table><thead><tr><th>Feature</th><th>Machine language</th><th>Assembly language</th><th>High-level language</th></tr></thead><tbody><tr><td>Representation</td><td>Binary numbers</td><td>Mnemonics and symbolic addresses</td><td>English-like statements</td></tr><tr><td>Translator</td><td>None</td><td>Assembler</td><td>Compiler or interpreter</td></tr><tr><td>Machine dependence</td><td>Yes</td><td>Yes</td><td>Generally no</td></tr><tr><td>Ease of programming</td><td>Very difficult</td><td>Moderate</td><td>High</td></tr></tbody></table></div></div><div class="callout"><b>Remember:</b> An <em>opcode</em> tells the computer which operation to perform, while an <em>operand</em> identifies the data or address on which the operation acts.</div><div class="checklist"><h4>Teaching checklist · Computer languages</h4><label><input type="checkbox" data-check="levels">Distinguish the three language levels</label><label><input type="checkbox" data-check="translators">Explain assembler, compiler, and interpreter</label></div></section>
+        <div id="empty" class="empty hidden">No matching topic yet. Try a term such as “RAM”, “storage”, “input”, or “compiler”.</div>
+        <footer class="footer"><p>AKTU B.C.A. Syllabus · Fundamentals of Computer</p><p>Interactive notes save checklist progress on this device.</p></footer>
+      </div>
     </div>
-</body>
-</html>
+  </main>
+  <script>
+    const units=[...document.querySelectorAll('.unit')], buttons=[...document.querySelectorAll('[data-unit]')];
+    buttons.forEach(b=>b.onclick=()=>{buttons.forEach(x=>x.classList.toggle('active',x===b));units.forEach(u=>u.classList.toggle('visible',u.id===b.dataset.unit));document.getElementById('empty').classList.add('hidden');window.scrollTo({top:0,behavior:'smooth'})});
+    const checks=[...document.querySelectorAll('[data-check]')]; checks.forEach(c=>{c.checked=localStorage.getItem('aktu-'+c.dataset.check)==='true';c.onchange=()=>localStorage.setItem('aktu-'+c.dataset.check,c.checked)});
+    document.getElementById('search').oninput=e=>{const q=e.target.value.trim().toLowerCase(), active=document.querySelector('.unit.visible'), blocks=[...active.querySelectorAll('.searchable')];let n=0;blocks.forEach(b=>{const show=!q||b.textContent.toLowerCase().includes(q);b.classList.toggle('hidden',!show);if(show)n++});document.getElementById('resultText').textContent=q?`${n} matching section${n===1?'':'s'} in this unit.`:'Search highlights matching topics.';document.getElementById('empty').classList.toggle('hidden',!q||n>0)};
+    document.getElementById('printBtn').onclick=()=>window.print();document.getElementById('themeBtn').onclick=()=>document.body.classList.toggle('high-contrast');
+  </script>
+</body></html>
